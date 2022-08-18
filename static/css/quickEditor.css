@@ -12,7 +12,7 @@
     padding: 0;
     margin: 0;
     width: 100%;
-    background: #e1eef6;
+    /* background: #e1eef6; */
     display: block;
   }
   
@@ -240,12 +240,12 @@
     padding: 0 8px;
   }
   
-  .quickEditor .leftBlock input:focus,
+  /* .quickEditor .leftBlock input:focus,
   .quickEditor .edit-buttons input:focus,
   .quickEditor .rightBlock input:focus {
     outline: 0;
     border-color: #00c3b3;
-  }
+  } */
   
   /* select */
   .quickEditor select {
@@ -648,7 +648,7 @@
   .quickEditor .rightBlock .prop-collapsible.active i:nth-child(1) {
     display: none;
   }
-  .quickEditor .rightBlock  .prop-collapsible.active i:nth-child(2) {
+  .quickEditor .rightBlock .prop-collapsible.active i:nth-child(2) {
     display: unset;
   }
   .quickEditor .bigPopUp header i:before {
@@ -707,6 +707,7 @@
     display: inline-block;
     float: left;
     background: #fafafa;
+    border-right: 1px solid #e0e0e0;
   }
   
   .quickEditor .leftBlock.hide {
@@ -1026,6 +1027,7 @@
     display: inline-block;
     float: left;
     background: #fafafa;
+    border-left: 1px solid #e0e0e0;
   }
   
   .quickEditor .rightBlock>header {
@@ -1227,13 +1229,9 @@
     right: 0;
     bottom: 0;
     z-index: 0;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-top: 0.2px solid #BDBDBD;
-  }
-  
-  .inspireTreeOverlay:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    border-right: 1px solid #e0e0e0;
   }
   
   .quickEditor .leftBlock .tree-view-header {
@@ -1332,6 +1330,9 @@
   
   .quickEditor .editor-ghost-comp {
     padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color:#757575
   }
   
   .quickEditor .leftBlock .quick-tooltip .quick-tooltip-content {
@@ -1404,5 +1405,17 @@
   .minimap-decorations-layer {background-color: #F5F5F5;}
   .monaco-editor .line-numbers {color: #0C77FF !important}
 
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+}
 
+::-webkit-scrollbar-track {
+  background: #fafafa
+}
+
+::-webkit-scrollbar-thumb {
+  background: #BDBDBD;
+}
   @media only screen and (min-width: 35em) {}
