@@ -1303,8 +1303,13 @@
   }
   
   .quickEditor .rightBlock .prop-content .prop-switch-slider.round::before {
-    left: 0px;
+    left: -2px;
   }
+  .prop-switch-slider::before {
+    -webkit-transform: translateX(6px);
+    -ms-transform: translateX(6px);
+    transform: translateX(6px);
+}
   .quickEditor .rightBlock .prop-content .prop-switch-slider.round {
     width: 43px;
     height: 24px;
