@@ -216,6 +216,10 @@
     width: 100%;
     flex-grow: 1;
   }
+  .quickEditor .leftBlock input[type="text"]:focus-visible,
+  .quickEditor .rightBlock input[type="text"]:focus-visible {
+    outline:none;
+  }
   
   .quickEditor .leftBlock .inputSmall[type="text"],
   .quickEditor .edit-buttons .inputSmall[type="text"],
@@ -1412,7 +1416,7 @@
   .monaco-editor-background {background-color: #F5F5F5 !important;}
   .minimap-decorations-layer {background-color: #F5F5F5;}
   .monaco-editor .line-numbers {color: #0C77FF !important}
-  
+
 input[type="checkbox"] {
   accent-color: #151233;
 }
