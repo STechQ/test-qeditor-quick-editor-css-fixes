@@ -1303,15 +1303,15 @@
   }
   
   .quickEditor .rightBlock .prop-content .prop-switch-slider.round::before {
-    left: -2px;
+    left: -5px;
   }
   .prop-switch-slider::before {
-    -webkit-transform: translateX(6px);
-    -ms-transform: translateX(6px);
-    transform: translateX(6px);
+    -webkit-transform: translateX(9px);
+    -ms-transform: translateX(9px);
+    transform: translateX(9px);
 }
   .quickEditor .rightBlock .prop-content .prop-switch-slider.round {
-    width: 43px;
+    width: 40px;
     height: 24px;
   }
   
@@ -1412,7 +1412,10 @@
   .monaco-editor-background {background-color: #F5F5F5 !important;}
   .minimap-decorations-layer {background-color: #F5F5F5;}
   .monaco-editor .line-numbers {color: #0C77FF !important}
-
+  
+input[type="checkbox"] {
+  accent-color: #151233;
+}
 ::-webkit-scrollbar {
   width: 12px;
   height: 12px;
