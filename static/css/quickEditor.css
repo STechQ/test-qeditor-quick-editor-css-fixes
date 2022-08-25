@@ -532,12 +532,12 @@
   }
   
   .quickEditor .bigPopUp .content {
-    width: calc(100% - 600px);
-    margin: 0 300px;
+    width: calc(100% - 200px);
+    margin: 0 100px;
   }
   .quickEditor .bigPopUp header {
-    width: calc(100% - 600px);
-    margin: 20px 300px 0;
+    width: calc(100% - 200px);
+    margin: 20px 100px 0;
   }
   
   .quickEditor .bigPopUp .content {
