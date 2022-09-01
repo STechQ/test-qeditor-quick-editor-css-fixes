@@ -1237,7 +1237,6 @@
     bottom: 0;
     z-index: 0;
     transition: 0.3s;
-    border-top: 0.2px solid #BDBDBD;
     border-right: 1px solid #e0e0e0;
   }
   
@@ -1250,6 +1249,7 @@
     position: sticky;
     top: 0;
     z-index: 5;
+    border-top: 0.2px solid #BDBDBD;
   }
   .quickEditor .leftBlock .tree-view-header td {
       float: right;
