@@ -339,10 +339,8 @@
     color: #E96767;
   }
   .quickEditor .cancelBtnModal {
-    /* background: #FFFFFF; */
-    /* border: 1px solid #6B6F90; */
     color: #757575;
-    width: 90px;
+    width: 90px !important;
     height: 40px !important;
   }
   .quickEditor .deleteBtnModal {
