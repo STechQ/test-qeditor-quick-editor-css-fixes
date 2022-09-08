@@ -2610,6 +2610,9 @@ nextIcon = 'mdi-plus'}`
         qValue: {
             type: "any"
         },
+        activeClass:{
+            type: String
+        },
         class: {
             type: String
         },
@@ -4656,6 +4659,12 @@ nextIcon = 'mdi-plus'}`
         items: {
             type: "Array<any>",
             editorDefaultValue: "[{name = 'test1', id = 1, children=[{name='test1 Child', id = 2}, {name='test2 Child', id = 3}]},{ name = 'test3', id = 4, children=[{name='test4 Child', id=5}]}]"
+        },
+        loadChildren:{
+            type: Function,     
+        },
+        loadingIcon:{
+            type: String
         },
         multipleActive: {
             type: Boolean

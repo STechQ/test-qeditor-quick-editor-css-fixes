@@ -386,7 +386,7 @@
   } */
   
   .quickEditor header {
-    height: 24px;
+    height: 32px;
     padding: 0px 15px;
     width: 100%;
     display: block;
@@ -716,7 +716,8 @@
   }
   
   .quickEditor .leftBlock.hide {
-    width: 56px;
+    width: 40px;
+    border-right: none;
   }
   
   .quickEditor .leftBlock.hide .toggleBlock {
@@ -741,7 +742,7 @@
   }
   
   .quickEditor .leftBlock header {
-    background: #fafbfc;
+    background: #fafafa;
     padding: 0px;
   }
   
@@ -770,11 +771,16 @@
   .quickEditor .leftBlock header i.toggleBlock {
     float: right;
     transition: transform 0.3s ease;
-    color: #BDBDBD
+    color: #BDBDBD;
+    margin-top: 4px;
+    cursor: pointer;
   }
   
   .quickEditor .leftBlock.hide header i.toggleBlock {
-    color: #2196f3;
+    color: #2C5A86;
+    margin-right: 5px;
+    margin-top: 4px;
+    cursor: pointer;
   }
   
   .quickEditor .filters {
@@ -1300,23 +1306,27 @@
     padding: 2px;
   }
   
-  .quickEditor .rightBlock .prop-content input:checked+.prop-switch-slider::before {
-    /* left: -7px; */
-  }
-  
-  .quickEditor .rightBlock .prop-content .prop-switch-slider.round::before {
+  .quickEditor .rightBlock .prop-content .prop-switch-slider.round::before,
+  .quickEditor .menu_right.directMenuItem .edit-mode-switch.round::after {
     left: -5px;
+    border-radius: 50%;
   }
-  .prop-switch-slider::before {
+  .prop-switch-slider::before,
+  .edit-mode-switch::after {
     -webkit-transform: translateX(9px);
     -ms-transform: translateX(9px);
     transform: translateX(9px);
 }
-  .quickEditor .rightBlock .prop-content .prop-switch-slider.round {
+  .quickEditor .rightBlock .prop-content .prop-switch-slider.round{
     width: 40px;
     height: 24px;
+    border-radius: 34px;
   }
-  
+  .quickEditor .menu_right.directMenuItem .edit-mode-switch.round {
+    width: 44px;
+    height: 24px;
+    border-radius: 34px;
+  }
   .quickEditor .footerAbsolute {
     left: unset !important;
     right: 0px !important;
