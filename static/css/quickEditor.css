@@ -713,10 +713,11 @@
     float: left;
     background: #fafafa;
     border-right: 1px solid #e0e0e0;
+    height: 100%;
   }
   
   .quickEditor .leftBlock.hide {
-    width: 40px;
+    width: 40px !important;
     border-right: none;
   }
   
@@ -744,6 +745,12 @@
   .quickEditor .leftBlock header {
     background: #fafafa;
     padding: 0px;
+  }
+  .quickEditor .leftBlock.hide header {
+    background: #fafafa;
+    padding: 0px;
+    border: 1px solid #E0E0E0;
+    border-top: none;
   }
   
   .quickEditor .leftBlock header i {
@@ -815,6 +822,7 @@
     margin: 10px 0;
     font-size: 14px;
     color: #212121;
+    font-weight: 500;
   }
   
   .quickEditor .cardList ul,
@@ -952,7 +960,7 @@
   }
   
   .quickEditor .contentBlock.wider {
-    width: calc(100% - 356px);
+    width: calc(100% - 356px) !important;
     display: inline-block;
     float: left;
   }
@@ -1234,14 +1242,13 @@
   
   .inspireTreeOverlay {
     display: flow-root;
-    width: 300px;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 0;
     transition: 0.3s;
-    border-right: 1px solid #e0e0e0;
+    background-color: #fafafa;
   }
   
   .quickEditor .leftBlock .tree-view-header {
