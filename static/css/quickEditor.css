@@ -4,6 +4,37 @@
     scrollbar-width: thin;
   }
   
+  .notificationIcon {
+    font-size: 30px;
+    vertical-align: middle;
+    margin: 6px 25px 11px 0px;
+    float: left;
+    color: #000000;
+  }
+
+  .Vue-Toastification__toast {
+    width: 350px;
+    box-shadow: 2px 2px 15px #00000066;
+    border-radius: 4px;
+    opacity: 0.9;
+  }
+
+  .Vue-Toastification__close-button{
+    color: #000000;
+  }
+
+  .Vue-Toastification__toast--warning {
+    background: #f3ca40 0% 0% no-repeat padding-box;
+  }
+
+  .Vue-Toastification__toast--success {
+    background: #29c660 0% 0% no-repeat padding-box;
+  }
+  
+  .Vue-Toastification__toast--error {
+    background: #ff6b6b 0% 0% no-repeat padding-box;
+  }
+  
   .quickEditor {
     font-family: 'Roboto' !important;
     font: normal normal normal 16px/21px Roboto;
