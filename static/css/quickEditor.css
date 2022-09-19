@@ -750,6 +750,7 @@
   .quickEditor .leftBlock.hide {
     width: 40px !important;
     border-right: none;
+    position:  relative !important;
   }
   
   .quickEditor .leftBlock.hide .toggleBlock {
@@ -928,7 +929,7 @@
   
   .quickEditor .tableList ul li span {
     display: inline-block;
-    vertical-align: inherit;
+    vertical-align: middle;
     line-height: 30px;
     overflow: hidden;
     white-space: nowrap;
@@ -950,6 +951,7 @@
     width: 48px;
     font-size: 30px;
     margin: 0 10px;
+    vertical-align: middle;
   }
   
   .quickEditor .cardList ul li i {
@@ -971,7 +973,7 @@
   
   .quickEditor .cardList ul li:hover,
   .quickEditor .tableList ul li:hover {
-    background: #BDBFD0;
+    background: #E3E3E3;
     color: #212121;
   }
 
@@ -991,9 +993,10 @@
   }
   
   .quickEditor .contentBlock.wider {
-    width: calc(100% - 356px) !important;
+    width: calc(100% - 340px);
     display: inline-block;
     float: left;
+    left: 0 !important;  
   }
   
   /* .quickEditor .contentBlock header .contentTitle,
@@ -1075,7 +1078,7 @@
   .quickEditor .rightBlock {
     width: 300px;
     display: inline-block;
-    float: left;
+    float: right;
     background: #fafafa;
     border-left: 1px solid #e0e0e0;
   }
@@ -1301,21 +1304,6 @@
   .quickEditor .leftBlock .tree-view-header .hovarable:hover {
     color: rgb(123, 131, 133);
   }
-  /* .quickEditor .leftBlock .inspire-tree .selected > .wholerow,
-  .quickEditor .leftBlock .inspire-tree .selected > .wholerow:hover,
-  .quickEditor .leftBlock .inspire-tree .selected > .title-wrap:hover + .wholerow{
-    background-color: #BDBFD0 !important;
-  }
-  .quickEditor .leftBlock .wholerow:hover,
-  .quickEditor .leftBlock .title-wrap:hover + .wholerow {
-    background-color: #E5E6EB !important;
-  }
-
-.quickEditor .leftBlock .inspire-tree .matched > .wholerow,
-.quickEditor .leftBlock .inspire-tree .matched > .wholerow:hover,
-.quickEditor .leftBlock .inspire-tree .matched > .title-wrap:hover + .wholerow {
-  background-color: rgba(247, 255, 170, 1);
-} */
 .inspire-tree .title {
   padding-left: 25px !important;
 }
@@ -1407,6 +1395,7 @@
   
   .quickEditor .contentBlock.non-edit-mode {
     width: 100% !important;
+    left: 0 !important;
   }
   
   .quickEditor .contentBlock.non-edit-mode .content #dropArea {
