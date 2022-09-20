@@ -423,9 +423,9 @@
     display: block;
     font-size: 80%;
   }
-  .quickEditor header ul.sections li {
+  /* .quickEditor header ul.sections li {
     border-bottom: 1px solid #e1eef6;
-  }
+  } */
   .quickEditor header i {
     display: inline-block;
     width: 30px;
@@ -824,6 +824,7 @@
   
   .quickEditor .filters {
     padding: 0px 15px;
+    margin-bottom: 12px;
   }
   
   .quickEditor .quickButton.filter {
@@ -846,17 +847,26 @@
     padding: 0 15px;
   }
   
-  .quickEditor .cardList h4,
-  .quickEditor .rightBlock h4,
-  .quickEditor .tableList h4 {
-    /* border-bottom: 1px solid #e1eef6; */
-    padding: 8px;
-    margin: 10px 0;
+  .quickEditor .rightBlock h4 {
+    border-top: 1px solid #E0E0E0;
+    padding: 12px;
+    margin: 6px 0;
     font-size: 14px;
     color: #212121;
     font-weight: 500;
   }
-  
+  .quickEditor .cardList h4,
+  .quickEditor .tableList h4 {
+    padding: 10px 8px 2px 8px;
+    margin: 6px 0;
+    font-size: 14px;
+    color: #212121;
+    font-weight: 500;
+  }
+  .quickEditor .tableList:first-child h4 {
+    padding-top: 4px;
+    margin-top: 0;
+  }
   .quickEditor .cardList ul,
   .quickEditor .tableList ul {
     padding: 0;
@@ -873,7 +883,7 @@
   .quickEditor .tableList ul li {
     background: #ffffff;
     padding: 10px;
-    margin: 5px;
+    margin: 5px 1px;
     width: 100%;
     font-size: 80%;
     text-align: left;
@@ -998,14 +1008,7 @@
     float: left;
     left: 0 !important;  
   }
-  
-  /* .quickEditor .contentBlock header .contentTitle,
-  .quickEditor .contentBlock header .edit-buttons {
-    background: #0492f2;
-    color: white;
-    font-weight: 600;
-  } */
-  
+
   .quickEditor .contentBlock header i {
     font-size: 20px;
     text-align: center;
@@ -1081,6 +1084,7 @@
     float: right;
     background: #fafafa;
     border-left: 1px solid #e0e0e0;
+    height: calc(100vh - 40px);
   }
   
   .quickEditor .rightBlock>header {
@@ -1117,7 +1121,6 @@
     display: inline-block;
     float: left;
     line-height: 30px;
-    margin: 0 0 15px 0;
     padding: 0 5px;
   }
   
