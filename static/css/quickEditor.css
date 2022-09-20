@@ -1000,6 +1000,7 @@
     width: calc(100% - 600px);
     display: inline-block;
     float: left;
+    background: #EEEEEE;
   }
   
   .quickEditor .contentBlock.wider {
@@ -1038,7 +1039,7 @@
   }
   
   .quickEditor .content #dropArea {
-    background: #fff;
+    background: #EEEEEE;
     padding: 20px;
     width: 100%;
   }
@@ -1457,6 +1458,9 @@
 
 input[type="checkbox"] {
   accent-color: #151233;
+}
+.theme--light.v-application {
+  background: #EEEEEE !important;
 }
 ::-webkit-scrollbar {
   width: 12px;
