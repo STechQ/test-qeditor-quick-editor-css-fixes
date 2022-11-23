@@ -254,7 +254,7 @@ var componentOptions = {
             propType: "attr"
         },
         menuProps: {
-            type: "{maxHeight: number}"
+            type: "{closeOnClick: boolean, closeOnContentClick: boolean, disableKeys: boolean, openOnClick: boolean, maxHeight: number, offsetY: boolean, offsetOverflow: boolean, transition: boolean}"
         },
         outlined: {
             type: Boolean
@@ -1046,6 +1046,9 @@ var componentOptions = {
         dark: {
             type: Boolean
         },
+        dense: {
+            type: Boolean
+        },
         disabled: {
             type: Boolean
         },
@@ -1468,6 +1471,10 @@ var componentOptions = {
         }
     },
     VContainer: {
+        eager:{
+            type:Boolean,
+            editorDefaultValue: "true"
+        },
         class: {
             type: String,
                 editorDefaultValue: "'container container--fluid'",
@@ -4887,9 +4894,9 @@ nextIcon = 'mdi-plus'}`
         },
     },
     QDocumentViewer: {
-        customCompClass: {
-            default: "pdf",
-            type: String
+        showToolBar: {
+            type: Boolean,
+            editorDefaultValue: "true"
         },
         src: {
             default: "",
@@ -4931,6 +4938,6 @@ nextIcon = 'mdi-plus'}`
 if (typeof exports === 'object' && typeof module === 'object') {
     module.exports = componentOptions;
 } else {
-    window["QEditorComponentOptions"] = componentOptions;
+    window["plateauUIComponentOptions"] = componentOptions;
 }
 //#region JS Section  

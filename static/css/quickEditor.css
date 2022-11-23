@@ -5,15 +5,16 @@
   }
   
   .notificationIcon {
-    font-size: 30px;
+    font-size: 28px;
     vertical-align: middle;
-    margin: 6px 25px 11px 0px;
+    margin: 3px 19px 0px 0px;
     float: left;
     color: #000000;
   }
 
   .Vue-Toastification__toast {
-    width: 350px;
+    min-width: 295px !important;
+    width: 295px;
     box-shadow: 2px 2px 15px #00000066;
     border-radius: 4px;
     opacity: 0.9;
@@ -556,7 +557,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 18;
+    z-index: 19;
     background: rgba(0, 0, 0, 0.65);
   }
   
@@ -1042,7 +1043,7 @@
   
   .quickEditor .content #dropArea {
     background: #EEEEEE;
-    padding: 20px;
+    padding: 9px 0 13px 12px;
     width: 100%;
   }
   
@@ -1455,12 +1456,60 @@
   }
   .margin-view-overlays {background-color: #F5F5F5;}
   .monaco-editor-background {background-color: #F5F5F5 !important;}
-  .minimap-decorations-layer {background-color: #F5F5F5;}
   .monaco-editor .line-numbers {color: #0C77FF !important}
   .monaco-action-bar .action-item {
     margin: 0 !important;
     float: none !important;
     background-color: #FFFFFF;
+  }
+  .monaco-action-bar .action-menu-item {
+    background-color: transparent !important;
+    margin: -1px;
+  }
+  
+  .action-label.codicon.separator.disabled {
+    margin-inline: auto !important;
+    background: transparent !important;
+  }
+  
+  
+  .monaco-scrollable-element .actions-container {
+    padding: 10px 0 !important;
+    width: 260px !important;
+    background: #FFFFFF;
+  }
+  
+  .actions-container .action-label {
+    color: #212121;
+    font-size: 14px !important;
+  }
+  
+  .actions-container .keybinding {
+    color: #757575;
+    font-size: 12px !important;
+  }
+  
+  .monaco-menu {
+    font-family: 'Roboto';
+  }
+  
+  .monaco-menu .monaco-action-bar.vertical .keybinding:hover {
+    color: #757575 !important;
+    background-color: #E3E3E3 !important;
+  }
+  
+  .monaco-menu .monaco-action-bar.vertical .action-label:hover {
+    color: #212121 !important;
+  }
+  
+  .monaco-menu .monaco-action-bar.vertical .submenu-indicator.codicon:before {
+    margin-right: -8px !important;
+    color: #212121 !important;
+  }
+  
+  .monaco-menu .monaco-action-bar.vertical .action-menu-item:hover {
+    background-color: #E3E3E3 !important;
+    margin: -1px;
   }
   .monaco-tree-row .content.actions {
     padding: 0 10px !important;
